@@ -1,0 +1,138 @@
+main {
+    display: flex;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #0C1240;
+}
+
+.main {
+    padding: 4rem 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+#labelCategoria {
+    font-size: 1.2rem;
+}
+
+.carousel img{
+    width: 100%;
+    height: auto;   
+    display: block;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel .carousel-subtitle {
+    position: absolute; 
+    z-index: 99; 
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 0 2rem 2rem;
+}
+
+.carousel .carousel-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    padding-bottom: 2rem;
+    border-radius: 5px
+}
+
+
+.news-container {
+    display: flex;
+    padding-right: 2rem;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.news-game {
+    background-color: white;
+    height: 600px;
+    width: 300px;
+}
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-list > * {
+    margin: 10px;
+}
+
+.news-iten {
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    padding: 5px;
+    max-width: 500px;
+    max-height: 250px;
+}
+
+.news-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.news-text > *{
+    padding: 5px 0;
+}
+
+.news-iten img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.news-title {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.news-subtitle {
+    font-size: .9rem;
+}
+
+.news-info {
+    font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 1025px) {
+    html {
+        font-size: 14px;
+    }
+
+    .news-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .news-iten img {
+        width: 150px;
+    }
+
+    .news-iten {
+        background-color: white;
+        display: flex;
+        border-radius: 10px;
+        padding: 5px;
+        max-width: 400px;
+    }
+}

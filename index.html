@@ -1,249 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConecTI - Portal de Notícias de Tecnologia</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            background-color: #000;
-            color: #ccc;
-            font-family: monospace;
-            margin: 0;
-            padding: 0;
-            overflow: hidden; /* Impede a barra de rolagem vertical */
-        }
 
-        header {
-            background-color: #333;
-            padding: 20px 0;
-            text-align: center;
-        }
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
 
-        h1 {
-            color: #00cc00;
-            font-size: 24px;
-            margin: 0;
-        }
-
-        .article {
-            background-color: #111;
-            border: 1px solid #444;
-            border-radius: 5px;
-            margin: 20px;
-            padding: 20px;
-        }
-
-        .article h2 {
-            color: #00cc00;
-            font-size: 20px;
-        }
-
-        .article p {
-            color: #ccc;
-        }
-
-        footer {
-            background-color: #333;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        footer p {
-            color: #ccc;
-        }
-
-        /* Estilo para o �cone do menu */
-        .menu-icon {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            cursor: pointer;
-            color: #ccc;
-            font-size: 24px;
-        }
-
-        /* Estilos para o menu vertical */
-        .menu {
-            position: absolute;
-            top: 60px;
-            left: -200px;
-            width: 200px;
-            background-color: transparent; /* Fundo transparente */
-            z-index: 1;
-            transition: left 0.3s ease-in-out;
-        }
-
-        .menu.show-menu {
-            left: 0;
-        }
-
-        .menu a {
-            color: #00cc00; /* Cor das letras em verde */
-            text-decoration: none;
-            padding: 10px;
-            display: block;
-        }
-
-        .menu a:hover {
-            color: #ffcc00; /* Cor das letras em amarelo ao passar o mouse */
-        }
-
-        /* Estilo para a bolinha verde (LED) */
-        .led {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background-color: #00cc00;
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999; /* Sobrepor outros elementos */
-            animation: blink 1s infinite, move 0.2s ease-in-out, colorChange 10s infinite;
-        }
-
-        /* Anima��o para simular um LED piscando */
-        @keyframes blink {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.3;
-            }
-        }
-
-        /* Anima��o para adicionar um pequeno atraso no movimento */
-        @keyframes move {
-            0%, 100% {
-                transform: translate(0, 0);
-            }
-            50% {
-                transform: translate(5px, 5px);
-            }
-        }
-
-        /* Anima��o para alterar a cor do LED a cada 10 segundos */
-        @keyframes colorChange {
-            0%, 100% {
-                background-color: #00cc00;
-            }
-            50% {
-                background-color: #ffcc00;
-            }
-        }
-
-        /* Estilo para a barra de pesquisa */
-        .search-bar {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            border: 2px solid #00cc00; /* Borda verde */
-            border-radius: 30px; /* Forma arredondada */
-            padding: 5px 10px;
-            background-color: transparent; /* Fundo transparente */
-            color: #ccc;
-            display: flex;
-            align-items: center;
-        }
-
-        .search-bar input {
-            border: none;
-            background: transparent;
-            color: #ccc;
-            width: 0;
-            transition: width 0.3s ease-in-out;
-            outline: none;
-        }
-
-        .search-bar input:focus {
-            width: 150px; /* Largura da barra de pesquisa quando focada */
-        }
-
-        .search-icon {
-            color: #00cc00;
-            font-size: 20px;
-            margin-right: 5px;
-        }
-    </style>
+    <title>ConnecTI</title>
 </head>
 <body>
-    <i class="fas fa-bars menu-icon" id="menu-icon"></i>
+    
     <header>
-        <h1>ConecTI - Portal de Notícias de Tecnologia</h1>
+        <div class="header-top">
+            <div>   
+                <img id="imgLogo" src="./assets/logo.png" alt="Logo">
+                <img id="imgNomeLogo" src="./assets/nomdeLogo.png" alt="ConnecTI">
+            </div>
+            <div>
+                <img id="imgSearch" src="./assets/search.svg" alt="Buscar">
+            </div>
+        </div>
+        <nav class="header-bottom">
+            <a href="#">Home</a>
+            <a href="#">Categorias</a>
+            <a href="#">Contato</a>
+        </nav>
+        <div style="height: 1px; background-color: white; width: 100%;"></div>
     </header>
-    <div class="article">
-        <h2>Título da Notícia</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac dolor eget libero hendrerit blandit. Fusce nec urna eget tellus cursus vulputate. Sed sollicitudin urna vel rhoncus.</p>
-    </div>
-    <div class="article">
-        <h2>Outro Título de Notícia</h2>
-        <p>Quisque in libero vel justo cursus pulvinar. Vivamus non diam eu dui blandit tristique. In hac habitasse platea dictumst.</p>
-    </div>
-    <!-- Menu vertical -->
-    <div class="menu" id="menu">
-        <a href="#">Início</a>
-        <a href="#">Notícias</a>
-        <a href="#">Análises</a>
-        <a href="#">Opinião</a>
-        <a href="#">Contato</a>
-    </div>
-    <footer>
-        <p>&copy; 2023 ConecTI - Portal de Notícias de Tecnologia</p>
-    </footer>
-    <!-- Bolinha verde (LED) que segue o mouse -->
-    <div class="led" id="led"></div>
-    <!-- Barra de pesquisa -->
-    <div class="search-bar">
-        <i class="fas fa-search search-icon"></i>
-        <input type="text" placeholder="Pesquisar...">
-    </div>
-    <script>
-        // Selecionar o �cone do menu e o menu em si
-        const menuIcon = document.getElementById("menu-icon");
-        const menu = document.getElementById("menu");
 
-        // Selecionar a bolinha verde (LED)
-        const led = document.getElementById("led");
+    <main>
+        <div class="main">
+            <div style="display: flex; width: 100%; align-items: center;">
+                <label style="color: white; margin-right: 10px;" id="labelCategoria">Destaques</label>          
+                <div style="height: 1px; background-color: white; width: 100%;"></div>
+            </div>
 
-        // Adicionar um ouvinte de evento para exibir/ocultar o menu
-        menuIcon.addEventListener("click", () => {
-            menu.classList.toggle("show-menu");
-        });
+            <div class="carousel">
+                <img src="./assets/teste.jpg" alt="" id="imgDestaque">
+                <div class="carousel-subtitle">
+                    <span class="carousel-title">Mercado de TI continua contratando apesar da crise das big techs</span>
+                </div>
+            </div>
 
-        // Adicionar um pequeno atraso no movimento da bolinha
-        let mouseX = 0;
-        let mouseY = 0;
 
-        document.addEventListener("mousemove", (event) => {
-            mouseX = event.clientX;
-            mouseY = event.clientY;
-        });
+            <div class="news-container">
+                <div class="news-list" id="newsList">
+                    <!-- <div class="news-iten">
+                        <img src="./assets/teste.jpg" alt="">
+                        <div class="news-text">
+                            <span class="news-title">As três forças que regulam a IA:</span>
+                            <span class="news-subtitle">Direito autoral, proteção de dados e relações trabalhistas são as forças regulatórias inesperadas.</span>
+                            <span class="news-info">22/10/2023 - Ronaldo Lemos</span>
+                        </div>
+                    </div> -->
+                </div>
 
-        const updatePosition = () => {
-            const targetX = mouseX - 5; // Ajuste o tamanho da bolinha aqui
-            const targetY = mouseY - 5; // Ajuste o tamanho da bolinha aqui
-
-            const dx = targetX - parseFloat(led.style.left || 0);
-            const dy = targetY - parseFloat(led.style.top || 0);
-
-            const dist = Math.sqrt(dx * dx + dy * dy);
-
-            if (dist < 1) {
-                led.style.left = targetX + "px";
-                led.style.top = targetY + "px";
-            } else {
-                const angle = Math.atan2(dy, dx);
-                const x = Math.cos(angle) * 1;
-                const y = Math.sin(angle) * 1;
-
-                led.style.left = parseFloat(led.style.left || 0) + x + "px";
-                led.style.top = parseFloat(led.style.top || 0) + y + "px";
-            }
-
-            requestAnimationFrame(updatePosition);
-        }
-
-        updatePosition();
-    </script>
+                <div class="news-game">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="javascrips/index.js"></script>
 </body>
 </html>
