@@ -78,3 +78,28 @@ header a:link {
     filter: invert(1);
     cursor: pointer;
 }
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.header-top > :first-child {
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #030529;
+}
+
+#imgSearch {
+    width: 32px;
+    filter: invert(1);
+    cursor: pointer;
+}
