@@ -2,13 +2,26 @@ main {
     display: flex;
     min-width: 100%;
     min-height: 100%;
-    background-color: #0C1240;
+    background-color: #030529;
 }
 
 .main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding: 4rem 2rem;
     width: 100%;
     height: 100%;
+    gap: 2rem;
+}
+
+.destaques {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    width: 97%; 
+    align-self: center;
+    margin-bottom: 4rem;
 }
 
 #labelCategoria {
@@ -19,6 +32,7 @@ main {
     width: 100%;
     height: auto;   
     display: block;
+    margin-bottom: 0.8cm;
 }
 
 .carousel {
@@ -26,8 +40,17 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 500px;
+    height: 400px;
     overflow: hidden;
+}
+
+.carousel .select-indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 92.4%;
+    width: 18px;
+    background-color: #417E98;
 }
 
 .carousel .carousel-subtitle {
@@ -38,7 +61,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding: 0 0 2rem 2rem;
+    /* padding: 0 0 2rem 2rem; */
 }
 
 .carousel .carousel-title {
@@ -51,10 +74,61 @@ main {
     border-radius: 5px
 }
 
+.inferior-carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.imgNoticia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.imgoticia > * {
+    margin: 10px;
+}
+
+.inferior-carousel-image {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.inferior-carousel img {
+    height: auto; 
+    display: block;
+    max-width: 30%;
+}
+
+.inferior-carousel-sub {
+    position: relative;
+    background: rgba(1, 0, 0, 0.5); /* Fundo para destacar o texto */
+    width: 30%; /* Ajusta a largura do fundo */
+    padding: 0px;
+    text-align: center;
+}
+
+.inferior-carousel-sub:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.inferior-carousel-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+/*Noticias do Corpo*/
 
 .news-container {
     display: flex;
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
     justify-content: space-between;
     margin-top: 3rem;
 }
@@ -68,7 +142,7 @@ main {
 .news-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
 }
 
 .news-list > * {
@@ -78,7 +152,6 @@ main {
 .news-iten {
     background-color: white;
     display: flex;
-    border-radius: 10px;
     padding: 5px;
     max-width: 500px;
     max-height: 250px;
@@ -97,7 +170,6 @@ main {
 .news-iten img {
     width: 200px;
     height: auto;
-    border-radius: 10px;
 }
 
 .news-title {
