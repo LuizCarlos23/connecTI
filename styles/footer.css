@@ -1,0 +1,77 @@
+/* Estilizando o rodapé */  
+.footer {
+    background-color: #030529; /* Cor de fundo do rodapé */
+    color: #ffffff; /* Cor do texto no rodapé */
+    text-align: center; /* Alinhar o conteúdo ao centro */
+    padding: 1px 0; /* Adicione o espaçamento interno desejado */
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas com largura igual */
+    gap: 20px; /* Espaço entre as colunas */
+    border-top: 2.5px solid #E5E3E3;
+    padding: 1px 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    text-align: left; /* Alinhar o conteúdo à esquerda */
+}
+
+.footer-logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.redes-social {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: #ffffff;
+    /* margin-top: 8%;  */
+}
+
+.redes-social a {
+    color: #ffffff; /* Cor dos ícones de mídia social */
+    font-size: 1.3em; /* Tamanho dos ícones de mídia social */
+    /* margin: 0 10px;  */
+    text-decoration: none;
+    font-size: 1.3em; /* Usando 'em' para o tamanho da fonte */
+    margin-right: 15px; /* Adicione margem direita para separar os links */
+}
+
+.redes-social i {
+    font-size: 1.3em; /* Usando 'em' para o tamanho do ícone */
+}
+
+.footer-fundo .fundo {
+    background-color: #000000; /* Define a cor de fundo do rodapé para branco */
+    text-align: center; /* Alinhar o conteúdo ao centro */
+    padding: 2px 0;
+    /* padding: 20px; Ajusta o espaçamento interno do rodapé conforme necessário */
+    /* margin-top: 1%; Adiciona espaçamento superior usando uma porcentagem */
+}
+
+.logo { 
+    height: 32px;
+    width: 32px;
+    margin-right: 10px;
+    padding: 10px 0;
+}
+
+.logoNome {
+    width: 150px;
+    height: auto;
+}
+
+/* Estilos responsivos para o rodapé */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1px 0;
+    }
+    .icones {
+        margin-top: 1%;
+    }
+}
