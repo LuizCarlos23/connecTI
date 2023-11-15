@@ -3,49 +3,90 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> Apresentação</title>
+    <title>Sobre</title>
     <link rel="stylesheet" href="design.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/sobre.css">
+    <link rel="stylesheet" href="./styles/header.css">
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="column">
-
-            <div class="member">
-                <img src="./assets/AvatarLuiz.jpeg" alt="Membro da Equipe">
-                <h3>Luiz</h3>
-                <p>O que marca call e vai pro forró</p>
-                <i class="fas fa-gamepad"></i>
+    <header>
+        <div class="header-top">
+            <div>   
+                <img id="imgLogo" src="./assets/logo.png" alt="Logo">
+                <img id="imgNomeLogo" src="./assets/nomdeLogo.png" alt="ConnecTI">
             </div>
-
-            <div class="member">
-                <img src="./assets/avatarCris.png" alt="Membro da Equipe">
-                <h3>cris</h3>
-                <p>A que me ignora no whatsapp</p>
-                <i class="fas fa-gamepad"></i>
+            <div>
+                <img id="imgSearch" src="./assets/search.svg" alt="Buscar">
             </div>
-
         </div>
-        <div class="column">
+        <nav class="header-bottom">
+            <a href="./index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="./Sobre.html">Sobre</a>
+        </nav>
+        <div style="height: 1px; background-color: white; width: 100%;"></div>
+    </header>
 
+    <main>
+        <div class="container">
             <div class="member">
-                <img src="./assets/avatarLucas.png" alt="Membro da Equipe">
-                <h3>Lucas</h3>
-                <p>O que vira a perna</p>
+                <div>
+                    <img src="./assets/avatarCris.png" alt="Membro da Equipe">
+                    <h3>Cris</h3>
+                </div>
+                <p>Termina a escola mas num sai dela</p>
+                <i class="fas fa-gamepad"></i>
+            </div>
+    
+            <div class="member">
+                <div>
+                    <img src="./assets/AvatarLuiz.jpeg" alt="Membro da Equipe">
+                    <h3>Luiz</h3>
+                </div>
+                <p>Desenvolvedor Full Stack</p>
                 <i class="fas fa-gamepad"></i>
             </div>
 
             <div class="member">
-                <img src="./assets/avatarFilipe.png" alt="Membro da Equipe">
-                <h3>Felipe</h3>
+                <div>
+                    <img src="./assets/avatarVinicius.png" alt="Membro da Equipe">
+                    <h3>Vinicius</h3>
+                </div>
+                <p>Branco como a neve</p>
+                <i class="fas fa-gamepad"></i>
+            </div>
+    
+            <div class="member">
+                <div>
+                    <img src="./assets/avatarSilas.png" alt="Membro da Equipe">
+                    <h3>Silas</h3>
+                </div>
+                <p>Vagabundo nato</p>
+                <i class="fas fa-gamepad"></i>
+            </div>
+
+            <div class="member">
+                <div>
+                    <img src="./assets/avatarLucas.png" alt="Membro da Equipe">
+                    <h3>Lucas</h3>
+                </div>
+                <p>Bebe mais que Opala</p>
+                <i class="fas fa-gamepad"></i>
+            </div>
+
+            <div class="member">
+                <div>
+                    <img src="./assets/avatarFilipe.png" alt="Membro da Equipe">
+                    <h3>Felipe</h3>
+                </div>
                 <p>Estou presente apenas em espirito</p>
                 <i class="fas fa-gamepad"></i>
             </div>
         </div>
-    </div>
+    </main>
 
     <script src="scripts.js"></script>
 </body>
