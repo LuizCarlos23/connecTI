@@ -159,6 +159,14 @@ main {
     max-height: 250px;
 }
 
+.news-iten a,
+.news-iten a:visited,
+.news-iten a:active,
+.news-iten a:link {
+    color: black;
+    text-decoration: none;
+}
+
 .news-text {
     display: flex;
     flex-direction: column;
@@ -175,16 +183,31 @@ main {
 }
 
 .news-title {
+    cursor: pointer;
     font-weight: bold;
     font-size: 1rem;
+    padding: 0 !important;
+    padding-top: 3px;
+}
+
+.news-title:hover {
+    color: rgb(0, 83, 142)
 }
 
 .news-subtitle {
+    display: block; 
+    display: -webkit-box;
     font-size: .9rem;
+    max-height: 90px;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .news-info {
     font-size: 0.7rem;
+    padding-top: 10px
 }
 
 @media only screen and (max-width: 1025px) {
