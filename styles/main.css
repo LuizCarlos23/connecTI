@@ -157,6 +157,7 @@ main {
     padding: 5px;
     max-width: 500px;
     max-height: 250px;
+    border-radius: 10px;
 }
 
 .news-iten a,
@@ -180,6 +181,7 @@ main {
 .news-iten img {
     width: 200px;
     height: auto;
+    border-radius: 10px;
 }
 
 .news-title {
