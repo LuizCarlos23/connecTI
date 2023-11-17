@@ -38,6 +38,7 @@ main {
     height: auto;   
     display: block;
     margin-bottom: 0.8cm;
+
 }
 
 .carousel {
@@ -47,6 +48,8 @@ main {
     width: 100%;
     height: 400px;
     overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+
 }
 
 .carousel .select-indicator{
@@ -78,10 +81,16 @@ main {
     padding-bottom: 2rem;
     border-radius: 5px
 }
+.carousel:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 15px rgba(76, 153, 153, 0.5); 
+}
 
 .inferior-carousel {
     position: relative;
     display: flex;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 1%;
 }
 
 .inferior-carousel:not( :first-child ):not( :last-child ) {
@@ -125,7 +134,10 @@ main {
     height: 100px; 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)); 
 }
-
+.inferior-carousel:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(76, 153, 153, 0.5);
+}
 /*Noticias do Corpo*/
 
 .news-container {
@@ -152,6 +164,10 @@ main {
 .news-game-item {
     display: flex;
     padding: 20px;
+}
+.news-game-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15 px rgba(76, 153, 153, 0.5);
 }
 
 .news-game-item:last-child{
@@ -182,11 +198,16 @@ main {
     height: auto;
     border-radius: 10px;
 }
+ 
+
 
 #news-game-title {
     padding-top: 10px;
 }
-
+.news-game-item:hover .news-game-img {
+    transform: scale(1.05);
+   
+}
 .news-list {
     display: flex;
     flex-wrap: wrap;
@@ -204,8 +225,12 @@ main {
     max-width: 500px;
     max-height: 250px;
     border-radius: 10px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
-
+.news-iten:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15 px rgba(76, 153, 153, 0.5);
+}
 .news-text a,
 .news-text a:visited,
 .news-text a:active,
