@@ -15,7 +15,7 @@ header a:link {
     text-decoration: none;
 }
 
-.header-bottom a::before {
+.header-bottom a::before{
     content: '';
     position: absolute;
     width: 100%;
@@ -31,7 +31,7 @@ header a:link {
     transition: transform .3s ease-in-out;
 }
 
-.header-bottom a:hover::before {
+.header-bottom a:hover::before{
     transform-origin: left;
     transform: scaleX(1);
 }
@@ -60,6 +60,13 @@ header a:link {
     align-items: center;
     justify-content: center;
     background-color: #fff;
+}
+
+.header-bottom > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none; 
 }
 
 #imgLogin {

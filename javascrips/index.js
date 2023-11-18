@@ -22,6 +22,12 @@ async function getNews(about = "tecnologia", amountNews = 10, callback) {
     
 }
 
+function changeCategory(category) {
+    let element = document.getElementById("newsList")
+    element.innerHTML = "";
+    getNews(category, 6, addNewsItem)
+}
+
 function addNewsItem(data = { title : "", description: "", image: "", publishedAt: "", url: "", source: { name: "", url: "" } }) {
     let newsListElement = document.getElementById("newsList")
     let html = ""
