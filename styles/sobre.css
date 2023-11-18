@@ -56,6 +56,20 @@ main {
     display: flex;
      gap: 10px;  
 }*/
+/*tentativa de ṕor o nome do curso de uma maneira frescurenta*/
+/*.member span {
+    display: flex;
+    position:relative;
+    top: -20%;
+    left: 33%;
+    transform: translate(-50%, -50%) rotate(-75deg);
+    font-size: 40px;
+    color: #fff;
+    z-index: 0;
+    rotate: (-61);
+}
+*/
+
 
 .member .social-icons a {
     text-decoration: none;
