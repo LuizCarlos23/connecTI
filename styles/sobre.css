@@ -52,7 +52,19 @@ main {
     transform: scale(1.05);
     text-decoration: none;
 }
+/*.member .social-icons {
+    display: flex;
+     gap: 10px;  
+}*/
 
+.member .social-icons a {
+    text-decoration: none;
+    color: #fff; 
+}
+.member .social-icons :hover{
+    transform: scale(2.02);
+    box-shadow: 0 0 15px rgba(76, 153, 153, 0.5);
+}
 .member img {
     border-radius: 50%;
     width: 120px;
