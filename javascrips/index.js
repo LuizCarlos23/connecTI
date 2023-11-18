@@ -1,5 +1,5 @@
- document.onload = getNews("tecnologia", 6, addNewsItem)
- document.onload = getNews("games", 3, addNewsGameItem)
+//  document.onload = getNews("tecnologia", 6, addNewsItem)
+//  document.onload = getNews("games", 3, addNewsGameItem)
 
 
 async function getNews(about = "tecnologia", amountNews = 10, callback) {
