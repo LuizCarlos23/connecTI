@@ -45,9 +45,12 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
-
+.member a {
+    text-decoration: none; 
+}
 .member:hover {
     transform: scale(1.05);
+    text-decoration: none;
 }
 
 .member img {
