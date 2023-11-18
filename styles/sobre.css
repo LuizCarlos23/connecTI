@@ -52,12 +52,12 @@ main {
     transform: scale(1.05);
     text-decoration: none;
 }
-/*.member .social-icons {
+/* .member .social-icons {
     display: flex;
      gap: 10px;  
-}*/
+} */
 /*tentativa de ṕor o nome do curso de uma maneira frescurenta*/
-/*.member span {
+.member span { 
     display: flex;
     position:relative;
     top: -20%;
@@ -68,7 +68,7 @@ main {
     z-index: 0;
     rotate: (-61);
 }
-*/
+
 
 
 .member .social-icons a {
@@ -76,6 +76,17 @@ main {
     color: #fff; 
 }
 .member .social-icons :hover{
+    transform: scale(2.02);
+    box-shadow: 0 0 15px rgba(76, 153, 153, 0.5);
+}
+.member .linguagem{
+    left: 30%;
+}
+.member .linguagem a{
+    text-decoration: none;
+    color: #fff; 
+}
+.member .linguagem :hover{
     transform: scale(2.02);
     box-shadow: 0 0 15px rgba(76, 153, 153, 0.5);
 }
