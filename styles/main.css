@@ -194,10 +194,10 @@ main {
     min-width: 100px;
 }
 
-.news-game-text a,
-.news-game-text a:visited,
-.news-game-text a:active,
-.news-game-text a:link {
+.news-game-text a, .inferior-carousel-title a,
+.news-game-text a:visited, .inferior-carousel-title a:visited,
+.news-game-text a:active, .inferior-carousel-title a:active,
+.news-game-text a:link, .inferior-carousel-title a:link {
     color: white;
     text-decoration: none;
 }
