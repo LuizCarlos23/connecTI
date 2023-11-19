@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ConnecTI - O Melhor Portal de Notícias de Tecnologia</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="./styles/header.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/footer.css">
+        <link rel="stylesheet" href="./styles/categories.css">
+        <link rel="stylesheet" href="./styles/login.css">
+    </head>
+
+    <body>
+        <!-- Formulários de Login/Cadastro -->
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Criar uma conta</h1>
+                    <input type="text" placeholder="Nome" />
+                    <input type="e-mail" placeholder="E-mail" />
+                    <input type="password" placeholder="Senha" />
+                    <button>inscreva-se</button>
+                    <span>Ou</span>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Entrar</h1>    
+                    <input type="e-mail" placeholder="E-mail" />
+                    <input type="password" placeholder="Senha" />
+                    <a href="#">Esqueceu sua senha?</a>
+                    <button>Conecte-se</button>
+                    <span>Ou use</span>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>  
+                </form>
+            </div>
+
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Bem vindo!</h1>
+                        <p>Para se manter conectado conosco, faça login com suas informações pessoais.</p>
+                        <button class="ghost" id="signIn">Entrar</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Olá!</h1>
+                        <p>Insira seus dados pessoais e comece sua jornada conosco.</p>
+                        <button class="ghost" id="signUp">Inscrever-se</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const signUpButton = document.getElementById('signUp');
+            const signInButton = document.getElementById('signIn');
+            const container = document.getElementById('container');
+            signUpButton.addEventListener('click', () => {
+            	container.classList.add("right-panel-active");
+            });
+            signInButton.addEventListener('click', () => {
+                container.classList.remove("right-panel-active");
+            });
+
+        </script>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    </body>
+
+</html>

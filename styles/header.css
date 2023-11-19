@@ -46,7 +46,8 @@ header a:link {
 #imgLogo {
     height: 56px;
     width: 56px;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-left: 12px;
     padding: 10px 0;
 }
 
@@ -73,6 +74,7 @@ header a:link {
     width: 32px;
     filter: invert(1);
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .header-top {
