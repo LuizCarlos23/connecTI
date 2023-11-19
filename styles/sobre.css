@@ -1,4 +1,5 @@
-body, html { 
+body,
+html {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -13,7 +14,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .container {
@@ -36,7 +37,7 @@ main {
     width: 240px;
     height: 310px;
     max-width: 240px !important;
-    min-width: 240px !important; 
+    min-width: 240px !important;
 
     max-height: 310px !important;
     max-height: 310px !important;
@@ -46,8 +47,64 @@ main {
     justify-content: space-between;
 }
 
+.member a {
+    text-decoration: none;
+}
+
 .member:hover {
     transform: scale(1.05);
+    text-decoration: none;
+}
+
+.member .social-icons {
+    display: flex;
+    position: relative;
+    top: 15%;
+    right: -37%;
+    /* gap: 10px;  */
+
+}
+/*tentativa de ṕor o nome do curso de uma maneira frescurenta*/
+/* .member span { 
+    display: flex;
+    position:relative;
+    top: -20%;
+    left: 33%;
+    transform: translate(-50%, -50%) rotate(-75deg);
+    font-size: 40px;
+    color: #fff;
+    z-index: 0;
+    rotate: (-61); 
+}*/
+
+
+
+.member .social-icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.member .social-icons :hover {
+    transform: scale(2.02);
+    box-shadow: 0 0 15px rgba(76, 153, 153, 0.5);
+}
+
+.member .linguagem {
+    display: flex;
+    position: relative;
+    top: -90%;
+    left: -3%;
+}
+
+.member .linguagem a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.member .linguagem :hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(76, 153, 153, 0.5);
 }
 
 .member img {
