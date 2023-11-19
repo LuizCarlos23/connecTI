@@ -64,7 +64,7 @@ main {
     /* gap: 10px;  */
 
 }
-/*tentativa de ṕor o nome do curso de uma maneira frescurenta*/
+/* /tentativa de ṕor o nome do curso de uma maneira frescurenta/ */
 /* .member span { 
     display: flex;
     position:relative;
@@ -85,14 +85,14 @@ main {
 }
 
 .member .social-icons :hover {
-    transform: scale(2.02);
+    transform: scale(1.02);
     box-shadow: 0 0 15px rgba(76, 153, 153, 0.5);
 }
 
 .member .linguagem {
     display: flex;
     position: relative;
-    top: -90%;
+    top: -88%;
     left: -3%;
 }
 
