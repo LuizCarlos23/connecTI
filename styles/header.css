@@ -42,17 +42,26 @@ header a:link {
     padding: 4px;
     /* color: black !important; */
 }
-
+#logoCompleta {
+    transition: transform  0.5s ease-in-out;;
+}
+#logoCompleta :hover{
+    transform: scale(1.02);
+}
 #imgLogo {
-    height: 56px;
-    width: 56px;
+    height: 32px;
+    width: 32px;
     margin-right: 20px;
     margin-left: 12px;
     padding: 10px 0;
+   
+    
 }
-
+ /* #imgLogo:hover{
+    transform: scale(1.02); 
+} */
 #imgNomeLogo {
-    width: 200px;
+    width: 130px;
     height: auto;
 }
 
@@ -71,6 +80,7 @@ header a:link {
 }
 
 #imgLogin {
+    
     width: 32px;
     filter: invert(1);
     cursor: pointer;
@@ -78,6 +88,7 @@ header a:link {
 }
 
 .header-top {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;

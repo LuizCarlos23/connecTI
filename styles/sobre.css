@@ -16,7 +16,9 @@ main {
     justify-content: center;
 
 }
-
+.categoriaLetra{
+    color: rgb(100, 97, 97);
+}
 .container {
     display: flex;
     justify-content: center;

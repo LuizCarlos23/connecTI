@@ -44,6 +44,11 @@
 
 .redes-social i {
     font-size: 1.3em; /* Usando 'em' para o tamanho do ícone */
+    
+}
+.redes-social :hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15 px rgba(76, 153, 153, 0.5);
 }
 
 .footer-fundo .fundo {

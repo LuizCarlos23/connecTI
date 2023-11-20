@@ -1,5 +1,6 @@
 let apikey = '4104745c63fccce3833cd4a988cafe94';
 let currentCategory = "tecnologia"
+let secondApiKey  = "21210b980039bdfb1ffe3f0f4f099e38"
 
 document.onload = getNews("tecnologia", 6, addNewsItem)
 document.onload = getNews("games", 3, addNewsGameItem)
