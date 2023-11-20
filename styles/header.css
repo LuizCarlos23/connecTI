@@ -42,15 +42,24 @@ header a:link {
     padding: 4px;
     /* color: black !important; */
 }
-
+#logoCompleta {
+    transition: transform  0.5s ease-in-out;;
+}
+#logoCompleta :hover{
+    transform: scale(1.02);
+}
 #imgLogo {
     height: 32px;
     width: 32px;
     margin-right: 20px;
     margin-left: 12px;
     padding: 10px 0;
+    transition:  transform 0.5s ease-in-out;
+    
 }
-
+/* #imgLogo:hover{
+    transform: scale(1.02);
+} */
 #imgNomeLogo {
     width: 130px;
     height: auto;
