@@ -44,15 +44,15 @@ header a:link {
 }
 
 #imgLogo {
-    height: 56px;
-    width: 56px;
+    height: 32px;
+    width: 32px;
     margin-right: 20px;
     margin-left: 12px;
     padding: 10px 0;
 }
 
 #imgNomeLogo {
-    width: 200px;
+    width: 130px;
     height: auto;
 }
 
