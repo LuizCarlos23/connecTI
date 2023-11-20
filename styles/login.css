@@ -11,6 +11,19 @@ body {
     overflow: hidden;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    position: absolute;
+    padding: 20px 50px;
+}
+
 body::before {
     content: '';
     background-color: rgb(0, 0, 0, .5);
@@ -23,6 +36,14 @@ body::before {
     right: 0;
 }
 
+span a, 
+span a:visited, 
+span a:active,
+span a:link {
+    color: white;
+    text-decoration: none;
+}
+
 .logo img {
     height: 75px;
     width: auto;
@@ -32,23 +53,23 @@ body::before {
     transform: scale(1.05);;
 }
 
-.header {
+/* .header {
     padding: 20px 50px;
     position: relative;
     z-index: 10;
-}
+} */
 
 .login_body {
     padding: 35px;
     z-index: 90;
-    position: relative;
+    /* position: relative; */
+    min-width: 450px;
     max-width: 450px;
     height: auto;
-    margin-left: 50%;
     background-color: rgba(0, 0, 0, 0.356);
     border-radius: 10px;
     box-sizing: border-box;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
 }
 
 .login_body h2 {
