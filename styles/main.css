@@ -73,7 +73,7 @@ main {
 }
 
 .carousel .carousel-title {
-    
+    font-family: "Times New Roman", Times, serif;
     font-size: 2rem;
     font-weight: bold;
     color: white;
@@ -103,6 +103,7 @@ main {
     display: flex;
     transition: transform 0.5s ease-in-out;
     border-radius: 1%;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .inferior-carousel:not( :first-child ):not( :last-child ) {

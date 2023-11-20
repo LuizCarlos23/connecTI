@@ -54,11 +54,11 @@ header a:link {
     margin-right: 20px;
     margin-left: 12px;
     padding: 10px 0;
-    transition:  transform 0.5s ease-in-out;
+   
     
 }
-/* #imgLogo:hover{
-    transform: scale(1.02);
+ /* #imgLogo:hover{
+    transform: scale(1.02); 
 } */
 #imgNomeLogo {
     width: 130px;
@@ -80,6 +80,7 @@ header a:link {
 }
 
 #imgLogin {
+    
     width: 32px;
     filter: invert(1);
     cursor: pointer;
@@ -87,6 +88,7 @@ header a:link {
 }
 
 .header-top {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
