@@ -1,6 +1,6 @@
-let apikey = '4104745c63fccce3833cd4a988cafe94';
+let apikey = "21210b980039bdfb1ffe3f0f4f099e38";
 let currentCategory = "tecnologia"
-let secondApiKey  = "21210b980039bdfb1ffe3f0f4f099e38"
+let secondApiKey  = '4104745c63fccce3833cd4a988cafe94'
 let thirdApiKey = "d925d0943f82037efb01e3802f816617"
 
 document.onload = getNews("tecnologia", 6, addNewsItem)
