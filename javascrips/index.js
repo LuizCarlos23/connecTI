@@ -69,4 +69,6 @@ function formatDate(dataString) {
 function changeApiKey() {
   let value = prompt("API KEY") 
   apikey =  value ? value : '4104745c63fccce3833cd4a988cafe94';
+  getNews("tecnologia", 6, addNewsItem)
+  getNews("games", 3, addNewsGameItem)
 }
