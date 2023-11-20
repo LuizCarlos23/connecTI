@@ -1,9 +1,10 @@
-  document.onload = getNews("tecnologia", 6, addNewsItem)
-  document.onload = getNews("games", 3, addNewsGameItem)
+let apikey = '4104745c63fccce3833cd4a988cafe94';
+let currentCategory = "tecnologia"
 
+document.onload = getNews("tecnologia", 6, addNewsItem)
+document.onload = getNews("games", 3, addNewsGameItem)
 
 async function getNews(about = "tecnologia", amountNews = 10, callback) {
-    apikey = '4104745c63fccce3833cd4a988cafe94';
     url = `https://gnews.io/api/v4/search?q=${about}&lang=pt&country=br&max=${amountNews}&apikey=${apikey} `;
 
     fetch(url)
@@ -23,6 +24,7 @@ async function getNews(about = "tecnologia", amountNews = 10, callback) {
 }
 
 function changeCategory(category) {
+    if (currentCategory == category) return
     let element = document.getElementById("newsList")
     element.innerHTML = "";
     getNews(category, 6, addNewsItem)
@@ -62,4 +64,9 @@ function formatDate(dataString) {
     const year = date.getFullYear();
 
     return `${day}/${month}/${year}`
+}
+
+function changeApiKey() {
+  let value = prompt("API KEY") 
+  apikey =  value ? value : '4104745c63fccce3833cd4a988cafe94';
 }
